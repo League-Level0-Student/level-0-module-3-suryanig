@@ -5,11 +5,11 @@ void setup() {
      background(160, 160, 160);
      drawFlower(350, 100);
 }
-
+//open bullseye for reference //open bullseye for reference
 void draw() {
   
 // First run the program and you should see a flower.  
-  
+
   
 /* Then, use a loop to make a body for the Bee! 
 (see the image on the recipe, it's a diagonal line of circles)
