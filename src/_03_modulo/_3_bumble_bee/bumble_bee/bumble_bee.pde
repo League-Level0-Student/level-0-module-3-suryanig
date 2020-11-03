@@ -5,7 +5,7 @@ void setup() {
      background(160, 160, 160);
      drawFlower(350, 100);
 }
-//open bullseye for reference //open bullseye for reference
+
 void draw() {
   
 // First run the program and you should see a flower.  
@@ -15,16 +15,22 @@ void draw() {
 (see the image on the recipe, it's a diagonal line of circles)
 Use modulo to make the colors alternate between yellow and black
 */
-
-
-
+for (int i=0; i<32; i++){
+if(i%2==0){
+  fill(0,0,0);
+}
+else{
+  fill(#FFF708);
+}
+ellipse(50+i*10,50+i*10,50,50); 
 /*
 Now put his head on using drawBeeFace(x,y)
 */
-
+}
+drawBeeFace(370,370);
 }
 
-/**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
+  /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
 
 void drawFlower(int x, int y) {
      noStroke();
